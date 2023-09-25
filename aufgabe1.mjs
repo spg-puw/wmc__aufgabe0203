@@ -1,4 +1,4 @@
-export const weatherdata = {
+const weatherdata = {
     stations: {
         "11035": { name: "Wien - Hohe Warte" },
         "11082": { name: "Gumpoldskirchen" }
@@ -15,7 +15,7 @@ export const weatherdata = {
     ]
 }
 
-export function generateStatistic(weatherdata) {
+function generateStatistic(weatherdata) {
     const statistics = {};
     //TODO: {"11035":{"name":"Wien - Hohe Warte","min":-2.7,"max":10.2},"11082":{"name":"Gumpoldskirchen","min":-6.3,"max":9.7}}
 
@@ -23,7 +23,6 @@ export function generateStatistic(weatherdata) {
 }
 
 export default { weatherdata, generateStatistic }
-
 if (import.meta.url.endsWith(process.argv[1])) {
     const statistics = generateStatistic(weatherdata);
     console.log(JSON.stringify(statistics));
