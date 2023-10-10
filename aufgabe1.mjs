@@ -23,7 +23,8 @@ function generateStatistic(weatherdata) {
 }
 
 export default { weatherdata, generateStatistic }
-if (import.meta.url.endsWith(process.argv[1])) {
+import { pathToFileURL as _path } from 'url'
+if (import.meta.url === _path(process.argv[1]).href) {
     const statistics = generateStatistic(weatherdata);
     console.log(JSON.stringify(statistics));
 }
