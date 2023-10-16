@@ -1,6 +1,6 @@
 # Aufgabe Wetter
 
-Die folgende Aufgabe wurde aus dem [Repository von Koll. Schletz](https://github.com/schletz/Wmc/blob/main/31_JavaScript/30_JSON_Arrays.md#%C3%BCbung-2) übernommen und um Tests ergänzt.
+Aufgabe by [PUW](https://github.com/spg-puw/). Die folgende Aufgabe wurde aus dem [Repository von Koll. Schletz](https://github.com/schletz/Wmc/blob/main/31_JavaScript/30_JSON_Arrays.md#%C3%BCbung-2) übernommen und um Tests ergänzt.
 
 Eine Wetter API liefert Messwerte im JSON Format. Die Stationen haben eine ID, die als Key
 dient. Die Messwerte liegen als Array *measurements* vor. Die Reihenfolge der Messwerte kann
